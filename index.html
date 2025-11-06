@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolyo Sitem - Sema Kara</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Sema Kara</h1>
+            <nav>
+                <ul>
+                    <li><a href="#anasayfa">Anasayfa</a></li>
+                    <li><a href="#hakkimda">Hakkımda</a></li>
+                    <li><a href="#projeler">Projeler</a></li>
+                    <li><a href="#iletisim">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="anasayfa" class="hero">
+        <div class="container">
+            <h2>Merhaba, Ben Sema</h2>
+            <p>Gelişmekte olduğum bir web geliştiriciyim. HTML, CSS ve JavaScript ile siteler oluşturuyorum.</p>
+            <a href="#projeler" class="btn">Projelerimi Gör</a>
+        </div>
+    </section>
+
+    <section id="hakkimda" class="hakkimda">
+        <div class="container">
+            <h2>Hakkımda</h2>
+            <img src="images/IMG_2042.jpeg?v=1" alt="Profil Fotoğrafı" class="profil-foto">
+            <p>
+               Burdur Mehmet Akif Ersoy Üniversitesi Ağlasun Meslek Yüksekokulu Bilgisayar Programcılığı 2.Sınıf öğrencisiyim.
+            Kendimi Web Tasarımı üzerinde geliştirmek istiyorum çünkü ilgimi çeken tek ders web tasarımı hayallerim doğrultusunda
+            durmadan devam edeceğime inanıyorum.
+            </p>
+        </div>
+    </section>
+
+    <section id="projeler" class="projeler">
+        <div class="container">
+            <h2>Projelerim</h2>
+            <div class="proje-galerisi">
+                
+                <div class="proje-karti">
+                    <img src="images/img-web1.jpg" alt="Proje 1 Görseli">
+                    <h3>Reklam Sitesi</h3>
+                    <p>HTML5,CSS3,JavaScript,Bootstrap kullanarak reklam sitesi oluşturdum ve ilk satışımı yaptım.</p>
+                    <a href="#modal1" class="btn-proje">Detayları Gör</a>
+                </div>
+
+                <div class="proje-karti">
+                    <img src="images/img-web2.png" alt="Proje 2 Görseli">
+                    <h3>Kişisel Web Sitesi</h3>
+                    <p>Alanında Türkiye birincisi Dr. Erg. Sehilya G*** için kişisel web sitesi oluşturmaktayım bunun üzerine çalışıyorum.</p>
+                    <a href="#modal2" class="btn-proje">Detayları Gör</a>
+                </div>
+
+                <div class="proje-karti">
+                    <img src="images/img-web3.png" alt="Proje 3 Görseli">
+                    <h3>Kadına Şiddet</h3>
+                    <p>Kadına şiddete yönelik analiz haritası ve farkındalık oyunu oluşturmak üzerine çalışıyorum.</p>
+                    <a href="#modal3" class="btn-proje">Detayları Gör</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="iletisim" class="iletisim">
+        <div class="container">
+            <h2>İletişim</h2>
+            <p>Benimle iletişime geçmek için aşağıdaki platformları kullanabilirsiniz.</p>
+            <div class="sosyal-medya">
+                <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="#"><i class="fas fa-envelope"></i> E-posta</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Sema Kara. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+    <div id="modal1" class="modal" aria-hidden="true">
+        <a href="#projeler" class="modal-overlay" aria-label="Kapat"></a>
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal1-title">
+            <a href="#projeler" class="modal-close" aria-label="Kapat">&times;</a>
+            <img class="modal-image" src="images/img-web1.jpg" alt="Reklam Sitesi Görseli">
+            <h3 id="modal1-title">Reklam Sitesi</h3>
+            <p class="modal-description">HTML5, CSS3, JavaScript, Bootstrap kullanarak reklam sitesi oluşturdum ve ilk satışımı yaptım.</p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal" aria-hidden="true">
+        <a href="#projeler" class="modal-overlay" aria-label="Kapat"></a>
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal2-title">
+            <a href="#projeler" class="modal-close" aria-label="Kapat">&times;</a>
+            <img class="modal-image" src="images/img-web2.png" alt="Kişisel Web Sitesi Görseli">
+            <h3 id="modal2-title">Kişisel Web Sitesi</h3>
+            <p class="modal-description">Alanında Türkiye birincisi Dr. Erg. Sehilya G*** için kişisel web sitesi oluşturmaktayım; bunun üzerine çalışıyorum.</p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal" aria-hidden="true">
+        <a href="#projeler" class="modal-overlay" aria-label="Kapat"></a>
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal3-title">
+            <a href="#projeler" class="modal-close" aria-label="Kapat">&times;</a>
+            <img class="modal-image" src="images/img-web3.png" alt="Kadına Şiddet Projesi Görseli">
+            <h3 id="modal3-title">Kadına Şiddet</h3>
+            <p class="modal-description">Kadına şiddete yönelik analiz haritası ve farkındalık oyunu oluşturmak üzerine çalışıyorum.</p>
+        </div>
+    </div>
+</body>
+</html>
